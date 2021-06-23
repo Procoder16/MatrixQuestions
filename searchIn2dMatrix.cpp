@@ -1,6 +1,15 @@
 #include<iostream>
-
 using namespace std;
+
+/*
+    The naive idea could be:
+        > running two for loops and checking for the number but this is very much time consuming, O(n^2)
+    Optomised solution : 
+        > start from the top right corner of the matrix
+        > if the current element is equal to the given number, simply return
+        > if the current element is larger than the given number reduce the column number 
+        > else, increase the row number    
+*/
 
 int main(){
 
